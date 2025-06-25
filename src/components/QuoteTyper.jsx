@@ -6,12 +6,11 @@ export default function QuoteTyper({ show }) {
     const [startTyping, setStartTyping] = useState(false);
 
     const text =
-        'I am deeply passionate about the intersection of digital media and AI, where creativity meets cutting-edge technology to shape new forms of expression. Exploring this evolving landscape allows me to constantly push boundaries and reimagine what’s possible through art and innovation.';
+        'Hi, I’m Roberto, and my path has always followed the pulse of the digital world. The rise of AI didn’t just amplify my curiosity — it opened a space where imagination, learning, and creation feel limitless. I create, I share, and I stay open to discovery, always moving forward — and I find purpose in guiding others to do the same.';
 
     useEffect(() => {
         if (!show) return;
 
-        // Delay typing by 3 seconds after 'show' is true
         const delayTimer = setTimeout(() => {
             setStartTyping(true);
         }, 3000);
@@ -27,10 +26,14 @@ export default function QuoteTyper({ show }) {
 
         const type = () => {
             if (i >= text.length) return;
+
             const char = text[i];
             setDisplayed((prev) => prev + char);
             i++;
-            const delay = char === ',' ? 600 : 55;
+
+            const slowChars = [',', '.', '—', '-', '–'];
+            const delay = slowChars.includes(char) ? 600 : 50;
+
             timeoutId = setTimeout(type, delay);
         };
 
