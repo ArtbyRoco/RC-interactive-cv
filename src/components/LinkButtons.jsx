@@ -4,7 +4,7 @@ export default function LinkButtons() {
     return (
         <div style={styles.container}>
             <div style={styles.wrapper}>
-                <a style={styles.glassButton} href="/cv.pdf" download target="_blank" rel="noopener noreferrer">
+                <a style={styles.glassButton} href="/RobertoCoccia_CV.pdf" download target="_blank" rel="noopener noreferrer">
                     CV
                 </a>
                 <a style={styles.glassButton} href="https://www.rocolab.eu" target="_blank" rel="noopener noreferrer">

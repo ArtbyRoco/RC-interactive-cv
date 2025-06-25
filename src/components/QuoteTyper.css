@@ -20,6 +20,22 @@
 }
 
 .cursor {
-    color: #aaa;
+    display: inline-block;
+    margin-left: 2px;
+    color: #E04E4E; /* red to match particles */
     animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+﻿import React from 'react';
 import CanvasPlayground from './components/CanvasPlayground';  // ← new opener
 import InfoSection from './components/InfoSection';
 import Timeline from './components/Timeline';
@@ -14,8 +14,5 @@ const App = () => {
         </>
     );
 };
-useEffect(() => {
-    document.title = 'Roberto Coccia — Interactive CV';
-}, []);
 
 export default App;
