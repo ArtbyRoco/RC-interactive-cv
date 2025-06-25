@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ———————————— meta ———————————— -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Your Name — Interactive CV</title>
+
+    <!-- ———————————— web-fonts (optional) ———————————— -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ———————————— base styles ———————————— -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, sans-serif;
+        background: #ffffff;
+        color: #222;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript
+      >This site is interactive—please enable JavaScript to experience it.</noscript
+    >
+
+    <!-- React mounts here -->
+    <div id="root"></div>
+
+    <!-- ———————————— entry script ———————————— -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
